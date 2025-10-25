@@ -3,64 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Sign up form</title>
 </head>
 <body>
     <header>
-        <div class="image">
+        <div class="image-wrapper">
             <img src="content/image.avif" alt="nature pic">
-        </div>
-        <div class="logo">
-            <img src="content/odin-lined.png" alt="odin logo">
-            <p>ODIN</p>
+            
         </div>
     </header>
     <main>
         <section class="top-text">
-            <h1>This is not a realonline service! You know you need something like this in your life to help you realize you deepest dreams. Sing up <em>now</em> to get started.</h1>
+            <h1>This is not a realonline service! You know you need something like this in your life to help you realize you deepest dreams. <br>Sing up <em>now</em> to get started.</h1>
             <h2>You <em>know</em> you want to.</h2>
         </section>
         <section class="middle-form">
-            
-            <form>
-                <legend class="visuall">Let`s do this!</legend>
+            <p>Let`s do this!</p>
+            <form action="#" method="post" id="sign-up">
+                
                 <fieldset>
                     <div>
                         <label for="first-name">First Name</label>
-                        <input type="text" id="first-name" name="first-name">
+                        <input type="text" id="first-name" name="first-name" required>
                     </div>
                     <div>
                         <label for="last-name">Last Name</label>
-                        <input type="text" id="last-name" name="last-name">
+                        <input type="text" id="last-name" name="last-name" required>
                     </div>
                   
 
                     <div>
                         <label for="user-email">Email</label>
-                        <input type="email" id="user-email" name="user-email">
+                        <input type="email" id="user-email" name="user-email" required>
                     </div>
                     <div>
                         <label for="user-number">Phone number</label>
-                        <input type="tel" id="user-number" name="user-number">
+                        <input type="tel" id="user-number" name="user-number" required>
                     </div>
 
                     
                     <div>
                         <label for="user-password">Password</label>
-                        <input type="password" id="user-password" name="user-password">
+                        <input type="password" id="user-password" name="user-password" required>
                     </div>
                     <div>
-                        <label for="confirm-password">Confirm assword</label>
-                        <input type="password" id="confirm-password" name="confirm-password">
+                        <label for="confirm-password">Confirm password</label>
+                        <input type="password" id="confirm-password" name="confirm-password" required>
                     </div>
                 </fieldset>  
             </form>
         </section>
 
         <section class="bottom-text">
-            <button class="button">Create Account</button>
-            <p>Already have an account? <a href="#">Log In</a></p>
+            <button class="button" type="submit" form="sign-up" id="signup-btn">Create Account</button>
+            <p>Already have an account? <a href="google.com" target="_blank">Log In</a></p>
         </section>
     </main>
 </body>
